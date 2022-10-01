@@ -1,11 +1,8 @@
-- title: About
-  url: /#about
-
 - title: Blog
   url: /#blog
 
-- title: Photos
-  url: /#photos
+- title: Stoicism
+  url: /#stoicism
 
-- title: Portfolio
-  url: /#portfolio
+- title: CV
+  url: /#cv

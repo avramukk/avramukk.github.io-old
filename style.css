@@ -16,9 +16,18 @@
   }
 }
 
+@font-face {
+  font-family: 'pixel_operatorregular';
+    src: url('pixeloperator-webfont.woff2') format('woff2'),
+         url('pixeloperator-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-  font-size: 18px;
-  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  font-family: 'pixel_operatorregular';
   line-height: 1.45;
   color: var(--textcolor);
   background: var(--bgcolor);
@@ -52,6 +61,8 @@ section:target { /* Show section */
 
 section#home { /* Show #home by default */
   display: block;
+  height: 100%;
+  overflow: hidden;
 }
 
 div.post { /* Show post content by default since it loads a separate page */
@@ -66,6 +77,13 @@ header {
   flex-wrap: wrap;
   position: relative;
   z-index: 2;
+}
+
+.footer {
+  position: relative;
+  left: 19vw;
+  bottom: 5vw;
+  text-align: left;
 }
 
 header h1 {
@@ -170,6 +188,7 @@ img, svg, video, audio {
   max-width: 100%;
   height: auto;
   fill: currentColor;
+  padding: 10px;
 }
   
 code, textarea {
@@ -264,7 +283,7 @@ section:target iframe {
 
 a[href*="//"]:after { 
   font-weight: 300;
-  content: "\2197"; /* top right arrow: ↗ */
+  /* content: "\2197"; /* top right arrow: ↗ */
   color: var(--textcolor);
   opacity: .25;
 }
@@ -308,6 +327,10 @@ article time {
   font-size: .8em;
   font-weight: 400;
   opacity: .7;
+}
+
+icon {
+  display: flex;
 }
 
 /* ------- Images Grid ------- */
@@ -439,6 +462,25 @@ article time {
   right: .5em;
   z-index: 4;
 }
+
+
+.rightpic {
+  float: right; /* Выравнивание по правому краю */
+  margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+  width: 60%;
+ }
+ .strong {
+  font-family: 'pixel_operatorregular';
+    src: url('pixeloperator-webfont.woff2') format('woff2'),
+         url('pixeloperator-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1em;
+    padding: 0;
+    letter-spacing: -.02em;
+    overflow: hidden;
+ }
 
 /* ------- Print ------- */
 

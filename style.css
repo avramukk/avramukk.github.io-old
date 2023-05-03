@@ -18,35 +18,43 @@
 }
 
 @font-face {
-  font-family: 'pixel_operatorregular';
-    src: url('pixeloperator-webfont.woff2') format('woff2'),
-         url('pixeloperator-webfont.woff') format('woff');
+  font-family: 'roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+ @font-face {
+  font-family: 'pixel';
+    src: url('fonts/pixeloperator-webfont.woff2') format('woff2'),
+         url('fonts/pixeloperator-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+
 body {
-  font-size: 16px;
-  font-family: 'pixel_operatorregular';
+  font-size: 14px;
+  font-family: 'roboto';
   line-height: 1.45;
   color: var(--textcolor);
   background: var(--bgcolor);
   position: relative;
-  max-width: 64em;  /* remove this for a full-width layout */
+  max-width: 85em;  /* remove this for a full-width layout */
   margin: 0 auto;  /* centers the layout */
 }
 
 @media only screen and (max-width: 680px) { /* smaller screens */
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 /* ------- Sections ------- */
 
 section, div.post {
-  padding: calc(6em + 5vw) 5vw 8vw 5vw;
+  padding: calc(6em + 5vw) 5vw 8vw 1vw;
   /* !! Everything below is needed !! */
   display: none;
   position: absolute;
@@ -61,6 +69,8 @@ section:target { /* Show section */
 }
 
 section#home { /* Show #home by default */
+  font-family: 'pixel';
+  font-size: 20px;
   display: block;
   height: 100%;
   overflow: hidden;
@@ -73,7 +83,10 @@ div.post { /* Show post content by default since it loads a separate page */
 /* ------- Header ------- */
 
 header {
-  padding: 5vw 5vw 0 5vw;
+  font-family: 'pixel';
+  font-size: 30px;
+  FONT-VARIANT: all-petite-caps;
+  padding: 5vw 1vw 0 1vw;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -467,16 +480,18 @@ icon {
 
 .rightpic {
   float: right; /* Выравнивание по правому краю */
-  margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+  margin: 0 0 0 0; /* Отступы вокруг фотографии */
   width: 60%;
+
  }
- .strong {
-  font-family: 'pixel_operatorregular';
-    src: url('pixeloperator-webfont.woff2') format('woff2'),
-         url('pixeloperator-webfont.woff') format('woff');
+
+.strong {
+  font-family: 'pixel';
+    src: url('fonts/pixeloperator-webfont.woff2') format('woff2'),
+         url('fonts/pixeloperator-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 1em;
     padding: 0;
     letter-spacing: -.02em;

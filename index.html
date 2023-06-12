@@ -2,39 +2,47 @@
 layout: default
 ---
 <section id="home"> <!-- HOME -->
-    <img loading="lazy" alt="" src="img/Avatar.png" width="300" height="300" class="rightpic">
+    <img loading="lazy" alt="" src="img/avatar2.JPG" class="rightpic">
     <h2 class="strong">Hi! 👋🏼 I am Mykola Avramuk<br></h2>
-    
 
-    <p>QA and Video Streaming Engineer from Kyiv, Ukraine 🇺🇦 <br> 
-    My area of interest: <br>
-    • Video Streaming <br>
-    • Quality Assurance<br>
-    • Engineering Management<br>
-    I write a <a I href="#blog" >blog</a> about video streaming and QA<br>
-    I like sport, photography and Stoicism <br>
-  </p>
-    <icon> 
-       <a  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/avramukk/" title="LinkedIn"> <img src="/img/linkedin-small.svg"> </a> 
-       <a  target="_blank" rel="noopener noreferrer" href="https://www.github.com/avramukk/" title="Github"> <img src="/img/github-small.svg"> </a> 
+
+    <p>QA and Video Streaming Engineer from Kyiv, Ukraine 🇺🇦 <br>
+        My area of interest: <br>
+        • Video Streaming <br>
+        • Quality Assurance<br>
+        • Engineering Management<br>
+        I write a <a href="#blog">blog</a> about video streaming and QA<br>
+        I like sport, <a href="#photos">photography</a>  and Stoicism <br>
+    </p>
+    <icon>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/avramukk/" title="LinkedIn"> <img
+                src="/img/linkedin-small.svg"> </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/avramukk/" title="Github"> <img
+                src="/img/github-small.svg"> </a>
     </icon>
 
 </section>
 
 <section id="about"> <!-- ABOUT -->
     <p>
-        Since high school, I knew I would be an engineer because I liked to take everything apart and put it back together again.</p>
-        
-    <p> So I went to the KPI to become a television engineer. In the third year, I went for an internship at a TV channel. 
+        Since high school, I knew I would be an engineer because I liked to take everything apart and put it back
+        together again.</p>
+
+    <p> So I went to the KPI to become a television engineer. In the third year, I went for an internship at a TV
+        channel.
         At the end of the internship, from four students, I got an offer for the position of quality control engineer.
-        Then a promotion to IT supports engineer. And another promotion to Video Broadcasting Automation Engineer. 
-        At the same time, I was also working as a video broadcast engineer for another TV channel. I was a video-streaming superman. </p>
-    <p>    
-        Then I got noticed by a professional video broadcasting software development company, and I still work in that field, and I still enjoy it. 
-    <p>  
-        I think this industry will be relevant for a long time, and I have a lot to learn and make excellent products.</p>
-    <p>    
-        Professional Skills: Video Streaming, Quality Assurance of Web, Desktop, and Mobile Apps, Test Automation, Project Management</p>
+        Then a promotion to IT supports engineer. And another promotion to Video Broadcasting Automation Engineer.
+        At the same time, I was also working as a video broadcast engineer for another TV channel. I was a
+        video-streaming superman. </p>
+    <p>
+        Then I got noticed by a professional video broadcasting software development company, and I still work in that
+        field, and I still enjoy it.
+    <p>
+        I think this industry will be relevant for a long time, and I have a lot to learn and make excellent products.
+    </p>
+    <p>
+        Professional Skills: Video Streaming, Quality Assurance of Web, Desktop, and Mobile Apps, Test Automation,
+        Project Management</p>
     <figure>
 
     </figure>
@@ -42,9 +50,10 @@ layout: default
 
 <section id="blog"> <!-- Blog -->
     <article>
-    {% for post in site.posts %}
-        <h2><a href="{{ post.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></h2>
-    {% endfor %}
+        {% for post in site.posts %}
+        <h2><a href="{{ post.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{
+                post.date | date: "%B %-d, %Y" }}</time></h2>
+        {% endfor %}
     </article>
 </section>
 
@@ -53,11 +62,11 @@ layout: default
 
 </section> -->
 
-      <!-- ----------
+<!-- ----------
       ---- PHOTOS ---
       ----------- -->
-      
-      <!-- <section id="photos">
+
+<!-- <section id="photos">
         
         <div class="grid">
           <a href="#img-01"><img loading="lazy" alt="" src="img/ukraine flag.jpeg"></a>
@@ -87,29 +96,29 @@ layout: default
         
       </section> -->
 
-    <!-- ----------
+<!-- ----------
       -- PORTFOLIO --
       ----------- -->
-        
-      <section id="photos"> 
 
-        <div class="slides">
-          <!-- <figure><img loading="lazy" alt="" src="img/4000x3000.png"></figure>
+<section id="photos">
+
+    <div class="slides">
+        <!-- <figure><img loading="lazy" alt="" src="img/4000x3000.png"></figure>
           <figure><img loading="lazy" alt="" src="img/3000x4000.png"></figure>
           <figure><img loading="lazy" alt="" src="img/4000x3000.png"></figure> -->
-          <!-- <figure>
+        <!-- <figure>
             <p>You could also have text over here…</p>
           </figure> -->
-          <!-- <figure>
+        <!-- <figure>
             <img loading="lazy" alt="" src="img/1000x1000.png">
             <figcaption>…or image captions</figcaption>
           </figure> -->
-          <figure >
+        <figure>
             <img loading="lazy" alt="" src="img/mainfull.jpg">
             <mycaption>⇊</mycaption>
-            </figure>
-          
-          <!-- <figure>
+        </figure>
+
+        <!-- <figure>
             <img loading="lazy" alt="" src="img/ukraine flag.jpeg">
           </figure>
             <figure>
@@ -171,71 +180,58 @@ layout: default
                 <img loading="lazy" alt="" src="img/000037.jpg">
             </figure> -->
 
-          <figure>
+        <figure>
             <img loading="lazy" alt="" src="img/DSCF2657-avramukk.jpg">
-          </figure>
+        </figure>
 
-          <figure>
+        <figure>
             <img loading="lazy" alt="" src="img/DSCF2684-avramukk.jpg">
-          </figure>
+        </figure>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF2822-avramukk.jpg">
-            </figure>
+        <figure>
+            <img loading="lazy" alt="" src="img/DSCF2822-avramukk.jpg">
+        </figure>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF2829-avramukk.jpg">
-            </figure>
+        <figure>
+            <img loading="lazy" alt="" src="img/DSCF2829-avramukk.jpg">
+        </figure>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF3046-avramukk.jpg">
-            </figure>
+        <figure>
+            <img loading="lazy" alt="" src="img/DSCF2890-avramukk.jpg">
+        </figure>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF3083-avramukk.jpg">
-            </figure>
+        <figure>
+            <img loading="lazy" alt="" src="img/DSCF3046-avramukk.jpg">
+        </figure>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF3087-avramukk.jpg">
-            </figure>
+        <figure>
+            <img loading="lazy" alt="" src="img/DSCF3083-avramukk.jpg">
+        </figure>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF3426 1-avramukk.jpg">
-            </figure>
+        <figure>
+            <img loading="lazy" alt="" src="img/DSCF3087-avramukk.jpg">
+        </figure>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF3562-avramukk.jpg">
-            </figure>
+        <figure>
+            <img loading="lazy" alt="" src="img/DSCF3562-avramukk.jpg">
+        </figure>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF3563-avramukk.jpg">
-            </figure>
+        <figure>
+            <img loading="lazy" alt="" src="img/DSCF3563-avramukk.jpg">
+        </figure>
+    </div>
 
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF3636 1-avramukk.jpg">
-            </figure>
-
-            <figure>
-                <img loading="lazy" alt="" src="img/DSCF3756 1-avramukk.jpg">
-            </figure>
+</section>
 
 
-
-
-
-        </div>
-
-      </section>
-      
-
-    <!-- ----------
+<!-- ----------
     - HI-RES IMAGES
     ----------- -->
 
-    <!-- For the PHOTOS grid -->
+<!-- For the PHOTOS grid -->
 
-    <div>
-    
+<div>
+
     <a href="#photos" class="lightbox" id="img-01"> <img loading="lazy" alt="" src="img/ukraine flag.jpeg"></a>
     <a href="#photos" class="lightbox" id="img-02"> <img loading="lazy" alt="" src="img/barcelona flowers.jpeg"></a>
     <a href="#photos" class="lightbox" id="img-03"> <img loading="lazy" alt="" src="img/barcelona graphiti.jpeg"></a>
@@ -257,26 +253,29 @@ layout: default
     <a href="#photos" class="lightbox" id="img-19"><img loading="lazy" alt="" src="img/000034.jpg"></a>
     <a href="#photos" class="lightbox" id="img-20"><img loading="lazy" alt="" src="img/000037.jpg"></a>
 
-    </div>
+</div>
 
 
 <section id="cv"> <!-- CV -->
     <div>
         <h1 class="strong">Personal information</h1>
         <p>
-        Date of birth: 16.12.1995<br>
-        Home: Kyiv <br>
-        Location: Barcelona <br>
-        Email: <a target="_blank" rel="noopener noreferrer" href="mailto:avramuk89@gmail.com">avramuk89@gmail.com</a><br>
-        LinkedIn: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/avramukk/">https://www.linkedin.com/in/avramukk</a><br>
-        Github: <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/avramukk">https://www.github.com/avramukk</a><br>
+            Date of birth: 16.12.1995<br>
+            Home: Kyiv <br>
+            Location: Barcelona <br>
+            Email: <a target="_blank" rel="noopener noreferrer"
+                href="mailto:avramuk89@gmail.com">avramuk89@gmail.com</a><br>
+            LinkedIn: <a target="_blank" rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/avramukk/">https://www.linkedin.com/in/avramukk</a><br>
+            Github: <a target="_blank" rel="noopener noreferrer"
+                href="https://www.github.com/avramukk">https://www.github.com/avramukk</a><br>
         </p><br>
 
         <h1 class="strong">Experience</h1>
         <p>
             3 years IT experience in development<br>
             5 years of experience in the IT Engineering on the TV<br>
-            </p>    <br>
+        </p> <br>
         <p>
             QA Engineer <br>
             <a target="_blank" rel="noopener noreferrer" href="https://switcher.ai">Switcher.ai</a>, Contract<br>
@@ -284,50 +283,56 @@ layout: default
             Technology: Quality Assurance Process, Live Video Streaming, Linux<br>
         </p><br>
 
-        <p> 
+        <p>
             QA Engineer & Project Manager <br>
             <a target="_blank" rel="noopener noreferrer" href="https://vvcr.tv">VVCR</a>, Contract<br>
             Jul 2020 - Present <br>
             Full QA process from scratch of cloud-based virtual video control room system (VVCR).
             Managing SDLC in the team of 4 people <br>
-            Technology: Scrum, Test Planning, System Testing, Regression Testing, Live Video Streaming, API Testing, Manual Testing, Test Automation <br>
+            Technology: Scrum, Test Planning, System Testing, Regression Testing, Live Video Streaming, API Testing,
+            Manual Testing, Test Automation <br>
         </p> <br>
 
         <p>
             QA Engineer <br>
             <a target="_blank" rel="noopener noreferrer" href="https://rivet.stream">RIVET</a>, Contract<br>
             Jul 2020 - Present <br>
-            Full QA process from scratch of Broadcast Tools (Windows, macOS, iOS, Android) and Platform (web) for Remote Streaming via SRT Protocols.<br>
-            Technology: Test Planning, System Testing, Regression Testing, Live Video Streaming, API Testing, Manual Testing, Test Automation <br>  
+            Full QA process from scratch of Broadcast Tools (Windows, macOS, iOS, Android) and Platform (web) for Remote
+            Streaming via SRT Protocols.<br>
+            Technology: Test Planning, System Testing, Regression Testing, Live Video Streaming, API Testing, Manual
+            Testing, Test Automation <br>
         </p> <br>
 
         <p>
             Video Streaming Engineer <br>
             <a target="_blank" rel="noopener noreferrer" href="https://media.1plus1.ua">1+1 MEDIA</a>, Shift-time<br>
             Aug 2018 - Jul 2020 <br>
-            Full QA process from scratch of Broadcast Tools (Windows, macOS, iOS, Android) and Platform (web) for Remote Streaming via SRT Protocols.<br>
-            Technology: Test Planning, System Testing, Regression Testing, Live Video Streaming, API Testing, Manual Testing, Test Automation <br>  
+            Full QA process from scratch of Broadcast Tools (Windows, macOS, iOS, Android) and Platform (web) for Remote
+            Streaming via SRT Protocols.<br>
+            Technology: Test Planning, System Testing, Regression Testing, Live Video Streaming, API Testing, Manual
+            Testing, Test Automation <br>
         </p> <br>
 
         <p>
-            Broadcasting Automation Engineer  <br>
+            Broadcasting Automation Engineer <br>
             TV channel, Shift-time<br>
             Mar 2020 - Jun 2021 <br>
-            Technology: Windows/Linux System Administration, Automation of Video Content Delivery for Post Production<br>
+            Technology: Windows/Linux System Administration, Automation of Video Content Delivery for Post
+            Production<br>
         </p> <br>
 
         <p>
             IT Support Engineer <br>
             TV channel, Shift-time<br>
             Feb 2018 - May 2020 <br>
-            Technology: Technical Support, Avid Technology Products <br>  
+            Technology: Technical Support, Avid Technology Products <br>
         </p> <br>
 
         <p>
             Broadcast Specialist <br>
             TV channel, Shift-time<br>
             Sep 2016 - Feb 2018 <br>
-            Technology: Oasys, Broadcasting, Television<br>  
+            Technology: Oasys, Broadcasting, Television<br>
         </p> <br>
 
 
@@ -343,10 +348,10 @@ layout: default
             - REST API, Docker, Grafana, Git<br>
             - Linux, Windows, macOS, Android, iOS<br>
             - SDI and IP video transport, Oasys System, Bash, and vMix<br>
-            - SRT, RTMP, NDI, WebRTC, FFMPEG<br>
+            - SRT, RTMP, HLS, WebRTC, NDI, WebRTC, FFMPEG<br>
         </p> <br>
 
-                <h1 class="strong">Education</h1>
+        <h1 class="strong">Education</h1>
 
         <p>
             National Technical University of Ukraine "Kyiv Polytechnic Institute"<br>

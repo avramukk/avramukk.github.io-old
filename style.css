@@ -73,7 +73,7 @@ section#home { /* Show #home by default */
   font-size: 20px;
   display: block;
   height: 100%;
-  overflow: hidden;
+  /* overflow:  hidden; */
 }
 
 div.post { /* Show post content by default since it loads a separate page */
@@ -499,6 +499,8 @@ icon {
   float: right; /* Выравнивание по правому краю */
   margin: 0 15px 0 0; /* Отступы вокруг фотографии */
   width: 49%;
+  max-width: 100%;
+  height: auto;
  }
 
 .strong {

@@ -497,9 +497,8 @@ icon {
 
 .rightpic {
   float: right; /* Выравнивание по правому краю */
-  margin: 0 0 0 0; /* Отступы вокруг фотографии */
-  width: 50%;
-  overflow: auto; /* Enable scrolling */
+  margin: 0 15px 0 0; /* Отступы вокруг фотографии */
+  width: 49%;
  }
 
 .strong {

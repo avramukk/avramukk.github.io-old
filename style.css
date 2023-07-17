@@ -498,8 +498,8 @@ icon {
 
 .rightpic {
   float: right; /* Выравнивание по правому краю */
-  margin: 0 15px 0 0; /* Отступы вокруг фотографии */
-  width: 49%;
+  margin: 0 -11px 0 0; /* Отступы вокруг фотографии */
+  width: 55%;
   max-width: 100%;
   height: auto;
  }

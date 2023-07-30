@@ -37,7 +37,7 @@
 
 
 body {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "main";
   line-height: 1.45;
   color: var(--textcolor);
@@ -549,7 +549,7 @@ icon {
 .rightpic {
   float: right; /* Выравнивание по правому краю */
   margin: 0 -11px 0 0; /* Отступы вокруг фотографии */
-  width: 55%;
+  width: 50%;
   max-width: 100%;
   height: auto;
 }

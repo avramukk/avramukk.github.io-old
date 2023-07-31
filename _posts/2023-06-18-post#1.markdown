@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Soon..."
-date:   2023-07-25 08:34:37 -0500
-categories: jekyll update
----
-Stay tuned for my upcoming posts on Testing and Videostreaming. Let's dive into these fascinating topics together! 👀📹

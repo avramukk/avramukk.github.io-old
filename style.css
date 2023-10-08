@@ -34,15 +34,13 @@
   font-style: normal;
 }
 
-
-
 body {
   font-size: 14px;
   font-family: "main";
   line-height: 1.45;
   color: var(--textcolor);
   background: var(--bgcolor);
-  background-image: url('img/nnnoise.svg');
+  background-image: url("img/nnnoise.svg");
   position: relative;
   max-width: 85em; /* remove this for a full-width layout */
   margin: 0 auto; /* centers the layout */
@@ -66,7 +64,7 @@ div.post {
   top: 0;
   min-height: 100vh;
   width: 100%;
-  background-image: url('img/nnnoise.svg');
+  background-image: url("img/nnnoise.svg");
 }
 
 section:target {
@@ -383,7 +381,7 @@ article + article {
 }
 
 article h2 {
-  font-family: 'strong';
+  font-family: "strong";
   font-size: 15px;
   font-weight: 700;
   margin: 0 0 1em 0;
@@ -548,16 +546,16 @@ icon {
 
 .rightpic {
   float: right; /* Выравнивание по правому краю */
-  margin: 0 -11px 0 0; /* Отступы вокруг фотографии */
-  width: 50%;
+  margin: -95px -11px 0 0; /* Отступы вокруг фотографии */
+  width: 60%;
   max-width: 100%;
   height: auto;
 }
 
 .strong {
   font-family: "strong";
-  src: url('fonts/UncutSans-Medium.woff2') format('woff2'),
-  url('fonts/UncutSans-Medium.woff') format('woff');
+  src: url("fonts/UncutSans-Medium.woff2") format("woff2"),
+    url("fonts/UncutSans-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-size: 35px;

@@ -42,8 +42,10 @@ body {
   background: var(--bgcolor);
   background-image: url("img/nnnoise.svg");
   position: relative;
-  max-width: 85em; /* remove this for a full-width layout */
-  margin: 0 auto; /* centers the layout */
+  max-width: 85em;
+  /* remove this for a full-width layout */
+  margin: 0 auto;
+  /* centers the layout */
 }
 
 @media only screen and (max-width: 680px) {
@@ -149,7 +151,8 @@ p,
 ul,
 ol,
 article {
-  max-width: 65ch; /* Limit line-length to 60 characters */
+  max-width: 65ch;
+  /* Limit line-length to 60 characters */
   margin-bottom: 0.6em;
 }
 
@@ -272,6 +275,7 @@ label:hover {
 label:before {
   content: "[";
 }
+
 label:after {
   content: "]";
 }
@@ -309,7 +313,8 @@ figure figcaption {
 
 figure.video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   height: 0;
   overflow: hidden;
 }
@@ -323,7 +328,8 @@ figure.video embed {
   width: 100%;
   height: 100%;
   border: 0;
-  visibility: hidden; /* so loading="lazy" should work? */
+  visibility: hidden;
+  /* so loading="lazy" should work? */
 }
 
 section:target iframe {
@@ -358,15 +364,19 @@ a:before {
 a[href$=".pdf"]:before {
   content: "PDF";
 }
+
 a[href$=".docx"]:before {
   content: "DOC";
 }
+
 a[href$=".txt"]:before {
   content: "TXT";
 }
+
 a[href$=".mp3"]:before {
   content: "MP3";
 }
+
 a[href$=".jpeg"]:before,
 a[href$=".jpg"]:before,
 a[href$=".gif"]:before,
@@ -455,7 +465,8 @@ icon {
   place-items: center;
   align-content: center;
   scroll-snap-align: center;
-  background-size: cover; /* Full bleed background images */
+  background-size: cover;
+  /* Full bleed background images */
   background-position: center center;
 }
 
@@ -527,6 +538,7 @@ icon {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -545,8 +557,10 @@ icon {
 }
 
 .rightpic {
-  float: right; /* Выравнивание по правому краю */
-  margin: -95px 0px 0 0; /* Отступы вокруг фотографии */
+  float: right;
+  /* Выравнивание по правому краю */
+  margin: -95px 0px 0 0;
+  /* Отступы вокруг фотографии */
   width: 57%;
   max-width: 100%;
   height: auto;
@@ -584,9 +598,11 @@ icon {
   label + input + small {
     display: inline;
   }
+
   label + input + small:before {
     content: "[";
   }
+
   label + input + small:after {
     content: "]";
   }
